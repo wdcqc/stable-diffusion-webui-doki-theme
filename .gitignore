@@ -9,6 +9,9 @@ __pycache__/
 *.png
 *.webp
 
+# Don't ignore the preview
+!preview.jpg
+
 # Submodules
 doki_themes/
 
