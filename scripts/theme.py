@@ -108,8 +108,8 @@ def save_settings(theme_select, file_bg, bg_align, bg_opacity):
             settings["bg_opacity"] = 0.08
         elif bg_opacity > 0.999:
             ext = os.path.splitext(file_bg.name)[1]
-            shutil.copy(file_bg.name, os.path.join(self_dir, "bg.{}".format(ext)))
-            settings["bg"] = "/file=extensions/{}/bg.{}".format(
+            shutil.copy(file_bg.name, os.path.join(self_dir, "bg{}".format(ext)))
+            settings["bg"] = "/file=extensions/{}/bg{}".format(
                 os.path.basename(self_dir),
                 ext
             )
