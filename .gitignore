@@ -1,0 +1,20 @@
+# Python
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Media files
+*.jpg
+*.png
+*.webp
+
+# Submodules
+doki_themes/
+
+# Node modules
+node_modules/
+
+# Generated config files
+theme_settings.json
+themes.json
