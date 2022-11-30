@@ -116,7 +116,7 @@ def save_settings(theme_select, file_bg, bg_align, bg_opacity):
         else:
             image_data = cv2.imread(file_bg.name, cv2.IMREAD_COLOR)
             image_rgba = cv2.cvtColor(image_data, cv2.COLOR_RGB2RGBA)
-            image_rgba[..., 3] = (image_rgba[..., 3] * 0.08).astype(np.uint8)
+            image_rgba[..., 3] = (image_rgba[..., 3] * settings["bg_opacity"]).astype(np.uint8)
             cv2.imwrite(os.path.join(self_dir, "bg.webp"), image_rgba, [cv2.IMWRITE_WEBP_QUALITY, 90])
             settings["bg"] = "/file=extensions/{}/bg.webp".format(
                 os.path.basename(self_dir)
