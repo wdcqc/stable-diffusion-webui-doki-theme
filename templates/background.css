@@ -21,7 +21,8 @@
 .gradio-container .text-gray-600,
 .gradio-container .text-gray-700,
 .gradio-container .text-gray-800,
-.gradio-container .text-gray-900 {{
+.gradio-container .text-gray-900,
+.gradio-container.dark .dark\:bg-gray-950 {{
     background-image: url({img});
     background-repeat: no-repeat;
     background-attachment: fixed;

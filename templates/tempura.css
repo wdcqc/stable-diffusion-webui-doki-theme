@@ -59,6 +59,11 @@
 .gradio-container .gr-box,
 .gradio-container .gr-prose,
 .gradio-container .gr-prose h1,
+.gradio-container .gr-prose h2,
+.gradio-container .gr-prose h3,
+.gradio-container .gr-prose h4,
+.gradio-container .gr-prose h5,
+.gradio-container .gr-prose h6,
 .gradio-container .text-gray-500,
 .gradio-container .text-gray-600,
 .gradio-container .text-gray-700,
@@ -69,6 +74,16 @@
 .gradio-container .gr-block.gr-box span.text-gray-700,
 .gradio-container .gr-block.gr-box span.text-gray-800,
 .gradio-container .gr-block.gr-box span.text-gray-900,
+.gradio-container .gr-samples-gallery .gr-sample-textbox,
+.gradio-container .gr-samples-gallery .gr-sample-markdown,
+.gradio-container .gr-samples-gallery .gr-sample-html,
+.gradio-container .gr-samples-gallery .gr-sample-slider,
+.gradio-container .gr-samples-gallery .gr-sample-checkbox,
+.gradio-container .gr-samples-gallery .gr-sample-checkboxgroup,
+.gradio-container .gr-samples-gallery .gr-sample-file,
+.gradio-container .gr-samples-gallery .gr-sample-number,
+.gradio-container .gr-samples-gallery .gr-sample-audio,
+.gradio-container .gr-samples-gallery .gr-sample-3d,
 .gradio-container option {{
     color: {foregroundColor};
 	background-color: {baseBackground};
@@ -359,7 +374,8 @@
 
 /* GLOBAL.DARK */
 
-.gradio-container.dark .bg-gray-950 {{
+.gradio-container.dark .bg-gray-950,
+.gradio-container.dark .dark\:bg-gray-950 {{
 	background-color: {baseBackground};
 }}
 

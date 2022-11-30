@@ -94,7 +94,7 @@ def save_settings(theme_select, file_bg, bg_align, bg_opacity):
             settings["theme"] = ""
 
         if file_bg is None:
-            if theme_select in themes:
+            if theme_select in themes and bg_opacity >= 0.001:
                 settings["bg"] = "https://doki.assets.unthrottled.io/backgrounds/wallpapers/transparent/{}".format(
                     themes[theme_select]["colors"]["stickerName"]
                 )
