@@ -398,7 +398,7 @@
 .gradio-container.dark .border-gray-100,
 .gradio-container.dark .border-gray-200,
 .gradio-container.dark .border-gray-300 {{
-    color: {borderColor};
+    border-color: {borderColor};
 }}
 
 .gradio-container.dark .bg-white {{
