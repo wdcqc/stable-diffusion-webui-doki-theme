@@ -284,7 +284,7 @@
     --ringoffsetshadow: 0 0 {accentShadowColor};
     --ringshadow: 0 0 0 3px {accentShadowColor};
     --shadow: 0 0 {accentShadowColor};
-    box-shadow: var(--ringoffsetshadow), var(--ringshadow), var(--shadow) !important;
+    box-shadow: var(--ringoffsetshadow), var(--ringshadow), var(--shadow);
 }}
 
 .gradio-container .gallery-item.gallery-item.\!ring-orange-500 {{
