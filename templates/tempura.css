@@ -280,6 +280,20 @@
     background-color: {accentColorReallyTransparent};
 }}
 
+.gradio-container .gallery-item.gallery-item.gallery-item:hover {{
+    --ringoffsetshadow: 0 0 {accentShadowColor};
+    --ringshadow: 0 0 0 3px {accentShadowColor};
+    --shadow: 0 0 {accentShadowColor};
+    box-shadow: var(--ringoffsetshadow), var(--ringshadow), var(--shadow) !important;
+}}
+
+.gradio-container .gallery-item.gallery-item.\!ring-orange-500 {{
+    --ringoffsetshadow: 0 0 {accentColor};
+    --ringshadow: 0 0 0 2px {accentColor};
+    --shadow: 0 0 {accentColor};
+    box-shadow: var(--ringoffsetshadow), var(--ringshadow), var(--shadow) !important;
+}}
+
 /* RANGE */
 
 .gradio-container input[type=range] {{
